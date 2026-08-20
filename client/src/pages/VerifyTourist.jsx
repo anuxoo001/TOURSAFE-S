@@ -60,6 +60,11 @@ const VerifyTourist = () => {
           </>
         )}
       </div>
+      <p className="text-sm" style={{ marginTop: '1rem', textAlign: 'center' }}>
+        <a href="https://toursafe-s.vercel.app/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)', fontWeight: 600 }}>
+          🌐 Live Deployment
+        </a>
+      </p>
     </div>
   );
 };

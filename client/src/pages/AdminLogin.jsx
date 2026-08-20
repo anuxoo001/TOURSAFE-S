@@ -64,6 +64,11 @@ const AdminLogin = () => {
           <Link to="/login">Go to Tourist Portal</Link>
         </div>
       </div>
+      <p className="text-sm" style={{ marginTop: '1rem', textAlign: 'center' }}>
+        <a href="https://toursafe-s.vercel.app/" target="_blank" rel="noopener noreferrer" style={{ color: '#fff', textDecoration: 'underline', opacity: 0.9 }}>
+          🌐 Live Deployment
+        </a>
+      </p>
     </div>
   );
 };
