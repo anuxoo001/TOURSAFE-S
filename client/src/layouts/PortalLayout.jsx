@@ -125,6 +125,9 @@ const PortalLayout = ({ navItems, brand = 'TOURSAFE', accent = 'blue', children 
             {sosAlerts.length > 0 && <span className="badge badge-red">🚨 {sosAlerts.length} SOS</span>}
           </div>
           <div className="topbar-actions">
+            <a href="https://toursafe-s.vercel.app/" target="_blank" rel="noopener noreferrer" className="chip badge-green" title="Live Deployment">
+              🌐 Live
+            </a>
             <NotificationBell />
             <div style={{ position: 'relative' }}>
               <button className="user-chip" onClick={() => setMenuOpen((o) => !o)}>

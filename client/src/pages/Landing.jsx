@@ -22,6 +22,17 @@ const Landing = () => {
           A smart tourist safety platform with geofencing, emergency SOS, incident reporting and live
           authority monitoring — so you can explore with peace of mind.
         </p>
+        <p style={{ marginTop: '1rem' }}>
+          <a
+            href="https://toursafe-s.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-lg"
+            style={{ background: 'rgba(255,255,255,0.15)', color: '#fff' }}
+          >
+            🌐 Live Deployment: toursafe-s.vercel.app
+          </a>
+        </p>
         {user ? (
           <div className="flex-center gap-1" style={{ marginTop: '1.5rem' }}>
             <Link to={home} className="btn btn-lg" style={{ background: '#fff', color: 'var(--primary)' }}>
