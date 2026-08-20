@@ -80,6 +80,11 @@ const Landing = () => {
 
       <footer style={{ textAlign: 'center', padding: '2rem 1rem', color: 'var(--muted)' }}>
         <p className="text-sm">© {new Date().getFullYear()} TOURSAFE — Tourist Safety Platform</p>
+        <p className="text-sm" style={{ marginTop: '0.5rem' }}>
+          <a href="https://toursafe-s.vercel.app/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)', fontWeight: 600 }}>
+            🌐 Live Deployment
+          </a>
+        </p>
       </footer>
     </div>
   );
