@@ -1000,6 +1000,28 @@ a {
   padding: 1.5rem 0;
 }
 
+.portal-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  border-top: 1px solid var(--border);
+  background: #fff;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.portal-footer a {
+  color: var(--primary);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.portal-footer a:hover {
+  text-decoration: underline;
+}
+
 .side-backdrop {
   display: none;
 }

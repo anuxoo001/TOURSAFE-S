@@ -144,6 +144,10 @@ const PortalLayout = ({ navItems, brand = 'TOURSAFE', accent = 'blue', children 
         <main className="portal-content">
           {children}
         </main>
+        <footer className="portal-footer">
+          <span>© {new Date().getFullYear()} TOURSAFE</span>
+          <a href="https://toursafe-s.vercel.app/" target="_blank" rel="noopener noreferrer">🌐 Live Deployment</a>
+        </footer>
       </div>
     </div>
   );
