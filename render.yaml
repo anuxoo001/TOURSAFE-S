@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: toursafe
+    runtime: node
+    plan: free
+    buildCommand: |
+      cd client
+      npm ci
+      npm run build
+      cd ../server
+      npm ci
+    startCommand: cd server && node server.js
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_VERSION
+        value: 20.11.0
+      - key: JWT_SECRET
+        generateValue: true
+      - key: JWT_EXPIRES_IN
+        value: 7d
+      - key: CLIENT_URL
+        sync: false
+      - key: MONGO_URI
+        sync: false
